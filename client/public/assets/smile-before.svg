@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <!-- Before: Slightly misaligned, tinted teeth demonstration -->
+  <defs>
+    <linearGradient id="bgBefore" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="lipBefore" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#E17278"/>
+      <stop offset="1" stop-color="#C7545B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#bgBefore)"/>
+  
+  <!-- Subtle Clinical Background Grid -->
+  <circle cx="300" cy="200" r="180" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Upper Lip -->
+  <path d="M120 180 C180 130 250 145 300 155 C350 145 420 130 480 180 C410 170 340 175 300 172 C260 175 190 170 120 180 Z" fill="url(#lipBefore)"/>
+
+  <!-- Teeth Area Background -->
+  <path d="M140 180 Q300 190 460 180 Q300 270 140 180 Z" fill="#471518"/>
+
+  <!-- Upper Teeth (Before: uneven, slightly discolored / yellowish tint) -->
+  <g id="teeth-before">
+    <!-- Molar L -->
+    <rect x="175" y="176" width="22" height="28" rx="5" fill="#EADCA6"/>
+    <!-- Premolar L -->
+    <rect x="200" y="174" width="22" height="34" rx="6" fill="#F0E3B2"/>
+    <!-- Canine L (slight rotation/misalignment) -->
+    <path d="M225 172 L245 174 L243 216 L223 210 Z" fill="#F2E6BE"/>
+    <!-- Central Incisor L (crooked angle) -->
+    <path d="M246 170 L273 172 L271 224 L244 219 Z" fill="#F4E8C1"/>
+    <!-- Central Incisor R -->
+    <path d="M276 172 L303 170 L301 222 L274 223 Z" fill="#EFE0AC"/>
+    <!-- Lateral Incisor R (overlap) -->
+    <path d="M302 173 L326 171 L328 217 L304 220 Z" fill="#F3E7BE"/>
+    <!-- Canine R -->
+    <path d="M328 174 L348 173 L350 212 L329 216 Z" fill="#EFE3B5"/>
+    <!-- Premolar R -->
+    <rect x="350" y="175" width="22" height="33" rx="6" fill="#EADCAB"/>
+    <!-- Molar R -->
+    <rect x="375" y="176" width="22" height="27" rx="5" fill="#E2D49F"/>
+  </g>
+
+  <!-- Lower Lip -->
+  <path d="M120 180 C190 260 410 260 480 180 C430 290 170 290 120 180 Z" fill="url(#lipBefore)"/>
+
+  <!-- Overlay Watermark Badge -->
+  <g transform="translate(30, 30)">
+    <rect width="120" height="36" rx="8" fill="#0F172A" fill-opacity="0.8"/>
+    <text x="18" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">BEFORE</text>
+    <circle cx="95" cy="18" r="4" fill="#EF4444"/>
+  </g>
+</svg>

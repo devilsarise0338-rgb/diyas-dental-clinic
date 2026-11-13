@@ -105,14 +105,21 @@
 /* Main gradient photo-style card spans 2 columns */
 .bento-card-main {
   grid-column: span 2;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   border-radius: var(--radius-lg);
-  padding: 2.25rem 2rem;
+  padding: 1.75rem 1.5rem;
   color: #ffffff;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-card);
   animation: softFloat 6s ease-in-out infinite;
+}
+
+.bento-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
 }
 
 .bento-main-badge {
@@ -121,37 +128,61 @@
   backdrop-filter: blur(8px);
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.725rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 1.25rem;
+}
+
+.bento-live-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(16, 185, 129, 0.25);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #ffffff;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.725rem;
+  font-weight: 700;
+}
+
+.bento-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-mint);
+  box-shadow: 0 0 6px #10b981;
+}
+
+.bento-img-container {
+  width: 100%;
+  height: 190px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 1.15rem;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bento-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .bento-main-title {
   color: #ffffff;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .bento-main-sub {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 0.9rem;
-}
-
-.bento-main-art {
-  position: absolute;
-  right: -20px;
-  bottom: -20px;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.875rem;
 }
 
 /* 2nd Card: 9+ Years Stat Card */
@@ -204,35 +235,47 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  color: var(--color-mint);
+  color: var(--color-primary);
   font-size: 0.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .bento-doctors-title {
-  font-size: 1.05rem;
-  font-weight: 800;
+  font-size: 0.825rem;
+  font-weight: 700;
   color: var(--color-text-main);
-  line-height: 1.2;
+  margin-bottom: 0.35rem;
 }
 
 .bento-doctors-names {
-  font-size: 0.775rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-top: 0.35rem;
   line-height: 1.4;
+  font-weight: 600;
 }
 
-/* Soft floating animation */
 @keyframes softFloat {
-  0% {
-    transform: translateY(0px);
+  0%, 100% {
+    transform: translateY(0);
   }
   50% {
     transform: translateY(-6px);
   }
-  100% {
-    transform: translateY(0px);
+}
+
+@media (max-width: 640px) {
+  .hero-wrapper {
+    padding: 3rem 0 3.5rem 0;
+  }
+  .hero-giant-headline {
+    font-size: 2.35rem;
+  }
+  .bento-card-stat,
+  .bento-card-doctors {
+    padding: 1.25rem 1rem;
+  }
+  .bento-img-container {
+    height: 150px;
   }
 }

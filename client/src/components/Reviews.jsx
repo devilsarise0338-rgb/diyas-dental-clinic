@@ -29,7 +29,7 @@ export default function Reviews() {
   return (
     <section className="reviews-section" id="reviews">
       <div className="container">
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem' }}>
+        <div className="reviews-header-row">
           <div>
             <span className="section-badge">Patient Feedback</span>
             <h2 className="section-title" style={{ marginBottom: '0.35rem' }}>
@@ -38,19 +38,17 @@ export default function Reviews() {
             <p className="section-subtitle">{t('reviewsSubheading')}</p>
           </div>
 
-          <div style={{ display: 'none', gap: '0.5rem' }} id="desktop-arrows">
+          <div className="reviews-desktop-nav-buttons">
             <button
               onClick={() => handleScroll('left')}
-              className="btn btn-outline"
-              style={{ width: '40px', height: '40px', padding: 0 }}
+              className="btn btn-outline review-nav-btn"
               aria-label="Scroll left"
             >
               <ChevronLeft size={18} />
             </button>
             <button
               onClick={() => handleScroll('right')}
-              className="btn btn-outline"
-              style={{ width: '40px', height: '40px', padding: 0 }}
+              className="btn btn-outline review-nav-btn"
               aria-label="Scroll right"
             >
               <ChevronRight size={18} />

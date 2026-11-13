@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { MoveHorizontal, Sparkles, Smile } from 'lucide-react';
+import { MoveHorizontal } from 'lucide-react';
 import '../styles/Gallery.css';
 
 export default function Gallery() {
@@ -11,7 +11,7 @@ export default function Gallery() {
     <section className="gallery-section" id="gallery">
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Before & After</span>
+          <span className="section-badge">Smile Gallery</span>
           <h2 className="section-title">{t('galleryHeading')}</h2>
           <p className="section-subtitle">{t('gallerySubheading')}</p>
         </div>
@@ -19,16 +19,14 @@ export default function Gallery() {
         <div className="gallery-box-wrapper">
           <div className="gallery-bento-card">
             <div className="modern-slider-canvas">
-              {/* After Layer (Background) */}
+              {/* After Layer (Background Full) */}
               <div className="slider-layer-full after-view">
-                <span className="slider-tag-pill after">After Treatment</span>
-                <div className="slider-center-icon after">
-                  <Sparkles size={40} />
-                </div>
-                <h4 className="slider-display-title">Restored Natural Radiance</h4>
-                <p className="slider-display-desc">
-                  [Aesthetic Teeth Whitening & Composite Smile Realignment Result]
-                </p>
+                <img
+                  src="/assets/smile-after.svg"
+                  alt="Smile condition after aesthetic dental treatment"
+                  className="slider-layer-img"
+                  loading="lazy"
+                />
               </div>
 
               {/* Before Layer (Clipped to sliderPos %) */}
@@ -38,14 +36,12 @@ export default function Gallery() {
                   clipPath: `polygon(0 0, ${sliderPos}% 0, ${sliderPos}% 100%, 0 100%)`,
                 }}
               >
-                <span className="slider-tag-pill before">Before Treatment</span>
-                <div className="slider-center-icon before">
-                  <Smile size={40} />
-                </div>
-                <h4 className="slider-display-title">Initial Enamel Condition</h4>
-                <p className="slider-display-desc">
-                  [Deep Discoloration, Cavity Decay & Misalignment Pre-Treatment]
-                </p>
+                <img
+                  src="/assets/smile-before.svg"
+                  alt="Smile condition before treatment"
+                  className="slider-layer-img"
+                  loading="lazy"
+                />
               </div>
 
               {/* Split Line & Handle Knob */}
@@ -55,7 +51,7 @@ export default function Gallery() {
                 </div>
               </div>
 
-              {/* Invisible native input for smooth drag */}
+              {/* Invisible native range input for smooth drag */}
               <input
                 type="range"
                 min="0"
@@ -70,7 +66,7 @@ export default function Gallery() {
             <div className="gallery-bottom-caption">
               <span>← Drag slider horizontally to compare →</span>
               <span>
-                <strong>Demonstration Case</strong> (Replaceable with clinic photography)
+                <strong>Demonstration Case</strong> (Replaceable with clinic clinical cases)
               </span>
             </div>
           </div>

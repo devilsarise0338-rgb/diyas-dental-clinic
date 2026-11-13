@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <!-- After: Beautifully aligned, bright pearl white smile -->
+  <defs>
+    <linearGradient id="bgAfter" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="lipAfter" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="toothPearl" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.8" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <filter id="sparkleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#bgAfter)"/>
+  
+  <!-- Subtle Glowing Aura -->
+  <circle cx="300" cy="200" r="170" fill="#3B82F6" fill-opacity="0.08"/>
+
+  <!-- Upper Lip (Confident, healthy smile) -->
+  <path d="M110 180 C175 125 245 140 300 150 C355 140 425 125 490 180 C415 168 340 172 300 170 C260 172 185 168 110 180 Z" fill="url(#lipAfter)"/>
+
+  <!-- Teeth Area Background -->
+  <path d="M130 180 Q300 192 470 180 Q300 280 130 180 Z" fill="#3D0C11"/>
+
+  <!-- Upper Teeth (After: Perfectly symmetrical, radiant pearl white) -->
+  <g id="teeth-after">
+    <!-- Molar L -->
+    <rect x="170" y="174" width="22" height="30" rx="6" fill="url(#toothPearl)"/>
+    <!-- Premolar L -->
+    <rect x="195" y="172" width="23" height="35" rx="7" fill="url(#toothPearl)"/>
+    <!-- Canine L -->
+    <path d="M221 170 L244 170 L242 220 L220 216 Z" fill="url(#toothPearl)"/>
+    <!-- Lateral Incisor L -->
+    <rect x="246" y="169" width="26" height="49" rx="7" fill="url(#toothPearl)"/>
+    <!-- Central Incisor L (Flawless) -->
+    <rect x="274" y="168" width="28" height="54" rx="8" fill="url(#toothPearl)"/>
+    <!-- Central Incisor R (Flawless) -->
+    <rect x="304" y="168" width="28" height="54" rx="8" fill="url(#toothPearl)"/>
+    <!-- Lateral Incisor R -->
+    <rect x="334" y="169" width="26" height="49" rx="7" fill="url(#toothPearl)"/>
+    <!-- Canine R -->
+    <path d="M362 170 L384 170 L383 216 L361 220 Z" fill="url(#toothPearl)"/>
+    <!-- Premolar R -->
+    <rect x="386" y="172" width="23" height="35" rx="7" fill="url(#toothPearl)"/>
+    <!-- Molar R -->
+    <rect x="411" y="174" width="22" height="30" rx="6" fill="url(#toothPearl)"/>
+  </g>
+
+  <!-- Lower Lip -->
+  <path d="M110 180 C185 270 415 270 490 180 C435 295 165 295 110 180 Z" fill="url(#lipAfter)"/>
+
+  <!-- Sparkles on Central Teeth -->
+  <g transform="translate(305, 175)" filter="url(#sparkleGlow)">
+    <path d="M0 -15 L3 -3 L15 0 L3 3 L0 15 L-3 3 L-15 0 L-3 -3 Z" fill="#FDE047"/>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(235, 185)" filter="url(#sparkleGlow)">
+    <path d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z" fill="#FDE047"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Overlay Watermark Badge -->
+  <g transform="translate(420, 30)">
+    <rect width="150" height="36" rx="8" fill="#10B981" fill-opacity="0.95"/>
+    <text x="18" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">AFTER CARE</text>
+    <circle cx="125" cy="18" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

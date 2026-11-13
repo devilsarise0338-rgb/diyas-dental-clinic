@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none">
+  <defs>
+    <linearGradient id="docBg1" x1="0" y1="0" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="100" y1="180" x2="220" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="scrubsGrad" x1="130" y1="190" x2="190" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Avatar Background -->
+  <circle cx="160" cy="160" r="150" fill="url(#docBg1)" stroke="#2563EB" stroke-opacity="0.15" stroke-width="4"/>
+  
+  <!-- Subtle Medical Accent Halo -->
+  <circle cx="160" cy="160" r="130" stroke="#3B82F6" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Doctor Silhouette / Illustration -->
+  <!-- Head & Hair -->
+  <!-- Hair -->
+  <path d="M122 110 C120 75 140 60 160 60 C180 60 200 75 198 110 C198 120 196 130 194 135 C190 120 185 85 160 85 C135 85 130 120 126 135 C124 130 122 120 122 110 Z" fill="#1E293B"/>
+  <!-- Face -->
+  <ellipse cx="160" cy="120" rx="32" ry="38" fill="#FBD5B5"/>
+  <!-- Hair top detail -->
+  <path d="M125 100 C130 75 155 70 165 70 C180 70 195 78 195 95 C185 88 170 85 155 88 C140 91 132 96 125 100 Z" fill="#0F172A"/>
+  <!-- Ears -->
+  <circle cx="126" cy="122" r="7" fill="#F5C29A"/>
+  <circle cx="194" cy="122" r="7" fill="#F5C29A"/>
+  <!-- Eyes -->
+  <ellipse cx="148" cy="116" rx="3.5" ry="3" fill="#1E293B"/>
+  <ellipse cx="172" cy="116" rx="3.5" ry="3" fill="#1E293B"/>
+  <circle cx="149" cy="115" r="1" fill="#FFFFFF"/>
+  <circle cx="173" cy="115" r="1" fill="#FFFFFF"/>
+  <!-- Eyebrows -->
+  <path d="M142 108 Q148 105 154 109" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+  <path d="M166 109 Q172 105 178 108" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+  <!-- Gentle Smile -->
+  <path d="M152 136 Q160 144 168 136" stroke="#C2410C" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M160 118 L158 127 L162 127" stroke="#E29D76" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <path d="M147 150 L147 175 L173 175 L173 150 Z" fill="#F5C29A"/>
+
+  <!-- Dental Specialist Scrubs V-neck -->
+  <path d="M130 175 L160 215 L190 175 L215 190 L195 310 L125 310 L105 190 Z" fill="url(#scrubsGrad)"/>
+  
+  <!-- White Doctor Coat -->
+  <path d="M100 185 C115 175 135 175 135 175 L155 240 L120 310 L70 310 C65 260 80 210 100 185 Z" fill="url(#coatGrad)" stroke="#CBD5E1" stroke-width="1.5"/>
+  <path d="M220 185 C205 175 185 175 185 175 L165 240 L200 310 L250 310 C255 260 240 210 220 185 Z" fill="url(#coatGrad)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Lapel Collars -->
+  <polygon points="135,175 155,225 140,225 125,185" fill="#FFFFFF"/>
+  <polygon points="185,175 165,225 180,225 195,185" fill="#FFFFFF"/>
+
+  <!-- Dental Loupe / Mirror Pin Badge -->
+  <circle cx="132" cy="225" r="7" fill="#10B981"/>
+  <circle cx="132" cy="225" r="4" fill="#FFFFFF"/>
+
+  <!-- Professional Name Badge in bottom corner -->
+  <g transform="translate(185, 235)">
+    <rect width="115" height="34" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.06))"/>
+    <text x="10" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#2563EB">Dr. Neel Kamal</text>
+    <text x="10" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7.5" fill="#64748B">Dental Specialist</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
-# Diya's Dental and General Care Clinic — Full-Stack Demo Website
+# Diya's Dental and General Care Clinic — Full-Stack Web Application
 
-A high-end, production-style dental and general family healthcare web application built for **Diya's Dental and General Care Clinic**, Mansarovar, Jaipur. Designed with the aesthetics of an exclusive private dental studio: deep teal/navy, warm whites, and soft champagne gold accents.
+A modern, high-end healthcare web platform built for **Diya's Dental and General Care Clinic**, Mansarovar, Jaipur. Designed with a **Bento-style healthcare brand aesthetic** (Apple-clean meets modern health tech): crisp pure-white surfaces, vibrant medical blue accents, fresh mint highlights, warm coral CTAs, and deep navy contrast sections.
 
 ---
 
@@ -13,7 +13,7 @@ A high-end, production-style dental and general family healthcare web applicatio
 - **Clinical Legacy:** Serving patients for 9+ years
 
 ### Configurable Placeholders
-As strictly instructed, details that are not yet confirmed are **NOT invented**. Instead, they are kept in a single configuration file (`client/src/config/clinic.js`) as explicit placeholders for the clinic owner to update:
+As strictly instructed, details that are not yet confirmed are **NOT invented**. Instead, they are maintained in a single configuration file (`client/src/config/clinic.js`) as explicit placeholders for the clinic owner to update:
 - `phone`: `[Phone]`
 - `whatsappNumber`: `[WhatsApp number]`
 - `timings`: `[Timings]`
@@ -22,22 +22,28 @@ As strictly instructed, details that are not yet confirmed are **NOT invented**.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack & Architecture
 
 - **Frontend:**
   - React 19 + Vite
   - React Router DOM v7 (Multi-page + Anchor navigation)
-  - Plain CSS (CSS Variables, component-scoped CSS, no bloated UI frameworks)
+  - Pure CSS Variables & Bento Grid system (no bloated external UI kits)
+  - Custom High-Resolution Vector Assets (Studio illustration, Doctor portraits, Before/After smile comparison, Clinic logo)
+  - Accessible `<Loader />` & Code-split route suspense
+  - Bilingual Context Engine (English / हिन्दी toggle)
   - Lucide React (feather-style minimalist medical and UI icons)
   - Axios for REST API communication
-  - Bilingual Context Engine (English / हिन्दी toggle)
 - **Backend:**
   - Node.js + Express (REST API)
   - Input validation (rejects past dates, enforces name & phone requirements)
   - CORS, dotenv, JSON Web Tokens (JWT) for staff session management
+  - Serverless adapter for Vercel deployment (`api/index.js`)
 - **Database:**
-  - SQLite (native zero-dependency engine with automatic table initialization and seeding)
+  - SQLite (with auto-initialization in `/tmp` for serverless environments)
   - Standard SQL schema (`schema.sql` and `seed.sql`) compatible with MySQL and PostgreSQL
+- **Hosting / Deployment:**
+  - GitHub: `https://github.com/devilsarise0338-rgb/diyas-dental-clinic`
+  - Vercel-ready with zero-config rewrites (`vercel.json`) and static asset cache headers
 
 ---
 
@@ -47,14 +53,25 @@ As strictly instructed, details that are not yet confirmed are **NOT invented**.
 ClinicWebsite/
 ├── single-page-demo.html          # Self-contained single-file HTML preview (opens in any browser)
 ├── package.json                   # Root package script runner
+├── vercel.json                    # Vercel deployment rewrites & asset caching headers
 ├── README.md                      # Complete installation and developer guide
+├── api/                           # Vercel serverless entrypoint
+│   └── index.js
 ├── client/                        # React Frontend (Vite)
-│   ├── index.html                 # SEO Meta tags, Google Fonts & Schema.org JSON-LD
+│   ├── index.html                 # SEO Meta tags, Open Graph, Google Fonts & Schema.org JSON-LD
 │   ├── package.json
 │   ├── vite.config.js
+│   ├── public/
+│   │   └── assets/                # Custom vector illustrations:
+│   │       ├── logo.svg           # Modern clinic brand emblem
+│   │       ├── clinic-studio.svg  # Dental studio interior illustration
+│   │       ├── dr-neel-kamal.svg  # Doctor portrait illustration
+│   │       ├── dr-gopal-singhal.svg# Physician portrait illustration
+│   │       ├── smile-before.svg   # Pre-treatment dental illustration
+│   │       └── smile-after.svg    # Post-treatment radiant smile
 │   └── src/
 │       ├── main.jsx
-│       ├── App.jsx
+│       ├── App.jsx                # Lazy-loaded page routes & suspense
 │       ├── config/
 │       │   └── clinic.js          # Master config for placeholders, contacts, translations
 │       ├── context/
@@ -62,7 +79,7 @@ ClinicWebsite/
 │       ├── services/
 │       │   └── api.js             # Axios client with fallback handling
 │       ├── styles/
-│       │   ├── variables.css      # Luxury Teal, Gold & White palette tokens
+│       │   ├── variables.css      # Bento Healthcare palette tokens & spacing
 │       │   ├── global.css         # Typography, reset, and utility classes
 │       │   ├── Navbar.css
 │       │   ├── Hero.css
@@ -76,21 +93,23 @@ ClinicWebsite/
 │       │   ├── Location.css
 │       │   ├── Footer.css
 │       │   ├── FloatingButtons.css
+│       │   ├── Loader.css
 │       │   ├── Pages.css
 │       │   └── Admin.css
 │       ├── components/
-│       │   ├── Navbar.jsx         # Glass-morphic sticky navbar with language switcher
-│       │   ├── Hero.jsx           # Abstract tooth & smile illustration SVG + CTAs
+│       │   ├── Navbar.jsx         # Clean white navbar, single line, EN/हिं toggle & coral CTA
+│       │   ├── Hero.jsx           # Bento cluster: Studio visual + 9+ Years + 2 Doctors
 │       │   ├── TrustStrip.jsx     # 4 confirmed clinic trust badges
-│       │   ├── Services.jsx       # 10 clinical services with category filter & editable note
+│       │   ├── Services.jsx       # Bento grid with featured card & category filters
 │       │   ├── Doctors.jsx        # Dr. Neel Kamal & Dr. Gopal Lal Singhal cards
-│       │   ├── WhyUs.jsx          # Painless care, sterilisation, honest guidance
-│       │   ├── Gallery.jsx        # Interactive before-and-after drag slider
-│       │   ├── Reviews.jsx        # Sample reviews carousel with owner badges
+│       │   ├── WhyUs.jsx          # Dark navy section with animated stat counters
+│       │   ├── Gallery.jsx        # Interactive before-and-after smile comparison slider
+│       │   ├── Reviews.jsx        # Sample reviews carousel with nav arrows & owner badges
 │       │   ├── AppointmentForm.jsx# Booking form with validation & WhatsApp follow-up link
 │       │   ├── Location.jsx       # Embedded Google Map for Mansarovar address
-│       │   ├── Footer.jsx         # Links, clinic hours, copyright
-│       │   └── FloatingButtons.jsx# Mobile-first floating WhatsApp & Call pills
+│       │   ├── Footer.jsx         # Dark navy 3-column footer with top CTA strip
+│       │   ├── FloatingButtons.jsx# Sticky mobile bottom bar + desktop WhatsApp pill
+│       │   └── Loader.jsx         # Accessible pulsing loading spinner
 │       └── pages/
 │           ├── Home.jsx           # Complete landing studio experience
 │           ├── ServicesPage.jsx   # Detailed treatments view
@@ -104,7 +123,7 @@ ClinicWebsite/
     ├── .env                       # Environment variables
     ├── .env.example
     ├── db/
-    │   └── connection.js          # SQLite connection and automatic schema runner
+    │   └── connection.js          # SQLite connection (supports serverless /tmp)
     ├── middleware/
     │   └── auth.js                # JWT & header-based admin authentication
     ├── routes/
@@ -123,10 +142,10 @@ ClinicWebsite/
 
 ---
 
-## 🚀 Quick Setup & Running
+## 🚀 Quick Setup & Running Locally
 
 ### Prerequisites
-- Node.js (v18 or higher; v22/v24 recommended)
+- Node.js (v18 or higher; v20/v22 recommended)
 - npm (v9 or higher)
 
 ### 1. Start the Backend API Server
@@ -150,13 +169,28 @@ The client will start on: **http://localhost:3000**
 
 ---
 
+## ☁️ Deploying to Vercel
+
+The repository is fully configured for zero-friction Vercel deployment:
+
+1. Import the repository in [Vercel](https://vercel.com): `https://github.com/devilsarise0338-rgb/diyas-dental-clinic`
+2. **Framework Preset:** Vite
+3. **Build Command:** `npm --prefix client install && npm --prefix client run build`
+4. **Output Directory:** `client/dist`
+5. Optional Environment Variables in Vercel:
+   - `ADMIN_PASSWORD`: Your secret admin password (defaults to `admin123`)
+   - `JWT_SECRET`: Random secret string for JWT tokens
+6. Click **Deploy**. Vercel will automatically build the client and route `/api/*` to the serverless function.
+
+---
+
 ## 🔐 Admin Portal (`/admin`)
 
 The demo includes a full-featured staff administration panel to demonstrate real working booking management to the clinic owner.
 
-- **URL:** `http://localhost:3000/admin`
+- **URL:** `/admin`
 - **Default Username:** `admin`
-- **Default Password:** `admin123` *(configurable in `server/.env` via `ADMIN_PASSWORD`)*
+- **Default Password:** `admin123` *(configurable via `ADMIN_PASSWORD`)*
 
 ### Admin Capabilities:
 - View all patient booking requests in a clean table.
@@ -194,11 +228,3 @@ export const CLINIC_CONFIG = {
   ]
 };
 ```
-
----
-
-## 🌟 Standalone Single-Page File
-
-If you need to show the design immediately on any computer, tablet, or phone without running Node:
-- Open `single-page-demo.html` directly in Google Chrome, Microsoft Edge, Safari, or Firefox.
-- It contains the complete styling, responsive layouts, bilingual English/Hindi toggle, interactive before-and-after slider, and prefilled WhatsApp booking action!

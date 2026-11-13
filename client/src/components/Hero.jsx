@@ -1,7 +1,7 @@
 import React from 'react';
 import { CLINIC_CONFIG } from '../config/clinic';
 import { useLanguage } from '../context/LanguageContext';
-import { Calendar, Phone, CheckCircle, Sparkles, Shield, UserCheck } from 'lucide-react';
+import { Calendar, Phone, CheckCircle, UserCheck } from 'lucide-react';
 import '../styles/Hero.css';
 
 export default function Hero() {
@@ -62,14 +62,26 @@ export default function Hero() {
           <div className="hero-bento-cluster">
             {/* 1. Gradient photo-style placeholder card */}
             <div className="bento-card-main">
-              <span className="bento-main-badge">[Clinic Studio Visual]</span>
+              <div className="bento-main-header">
+                <span className="bento-main-badge">[Clinic Studio Visual]</span>
+                <span className="bento-live-status">
+                  <span className="bento-status-dot"></span> Open Today
+                </span>
+              </div>
+
+              <div className="bento-img-container">
+                <img
+                  src="/assets/clinic-studio.svg"
+                  alt="Diya's Dental and General Care Clinic Studio, Mansarovar Jaipur"
+                  className="bento-main-img"
+                  loading="eager"
+                />
+              </div>
+
               <h3 className="bento-main-title">Modern Dental & Health Studio</h3>
               <p className="bento-main-sub">
                 120A, Shri Ram Vihar A, Manyawas, Mansarovar, Jaipur
               </p>
-              <div className="bento-main-art">
-                <Sparkles size={64} color="#ffffff" opacity="0.3" />
-              </div>
             </div>
 
             {/* 2. 9+ Years Stat Card */}

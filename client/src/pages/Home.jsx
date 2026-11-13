@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import TrustStrip from '../components/TrustStrip';
 import Services from '../components/Services';
 import Doctors from '../components/Doctors';
 import WhyUs from '../components/WhyUs';
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <TrustStrip />
       <Services />
       <Doctors />
       <WhyUs />

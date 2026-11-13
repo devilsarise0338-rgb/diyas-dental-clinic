@@ -7,14 +7,14 @@ export default function TrustStrip() {
   const getIcon = (iconName) => {
     switch (iconName) {
       case 'clock':
-        return <Clock size={24} />;
+        return <Clock size={22} />;
       case 'user-check':
-        return <UserCheck size={24} />;
+        return <UserCheck size={22} />;
       case 'shield':
-        return <Shield size={24} />;
+        return <Shield size={22} />;
       case 'map-pin':
       default:
-        return <MapPin size={24} />;
+        return <MapPin size={22} />;
     }
   };
 
@@ -27,7 +27,7 @@ export default function TrustStrip() {
               <div className="trust-icon-box">{getIcon(badge.icon)}</div>
               <div className="trust-text-col">
                 <span className="trust-label">{badge.label}</span>
-                <span className="trust-subtitle">{badge.subtitle}</span>
+                <span className="trust-subtitle">{badge.sub || badge.subtitle}</span>
               </div>
             </div>
           ))}
