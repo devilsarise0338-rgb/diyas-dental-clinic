@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentist in Mansarovar, Jaipur | Diya's Dental and General Care Clinic</title>
+  <meta name="description" content="Your smile, in caring hands. 9+ years of trusted dental and family care in Mansarovar, Jaipur by Dr. Neel Kamal and Dr. Gopal Lal Singhal.">
+  
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Dentist Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Dentist", "MedicalClinic"],
+    "name": "Diya's Dental and General Care Clinic",
+    "description": "Your smile, in caring hands. 9+ years of trusted dental and family care in Mansarovar, Jaipur.",
+    "telephone": "[Phone]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "120A, Shri Ram Vihar A, Manyawas, Mansarovar",
+      "addressLocality": "Jaipur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "302020",
+      "addressCountry": "IN"
+    },
+    "openingHours": "[Timings]",
+    "founder": [
+      { "@type": "Person", "name": "Dr. Neel Kamal", "jobTitle": "Dental Specialist" },
+      { "@type": "Person", "name": "Dr. Gopal Lal Singhal", "jobTitle": "Senior General Physician" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #F7FAFC;
+      --card: #FFFFFF;
+      --primary: #2563EB;
+      --primary-tint: #EAF1FF;
+      --primary-hover: #1D4ED8;
+      --mint: #10B981;
+      --mint-light: #ECFDF5;
+      --coral: #FF6B6B;
+      --coral-hover: #FA5252;
+      --dark-navy: #0B1B3A;
+      --dark-surface: #132448;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --font: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --radius-sm: 12px;
+      --radius-md: 14px;
+      --radius-lg: 16px;
+      --shadow-card: 0 4px 12px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.03);
+      --shadow-coral: 0 8px 20px rgba(255, 107, 107, 0.32);
+      --shadow-blue: 0 8px 20px rgba(37, 99, 235, 0.25);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.65; }
+    h1, h2, h3, h4 { font-family: var(--font); color: var(--text); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; }
+    p { color: var(--text-muted); }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    
+    /* Clean White Navbar */
+    .navbar { position: sticky; top: 0; left: 0; width: 100%; height: 72px; background: #ffffff; border-bottom: 1px solid var(--border); z-index: 1000; display: flex; align-items: center; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: 0.65rem; }
+    .brand-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.15rem; }
+    .brand-title { font-size: 1.05rem; font-weight: 800; color: var(--text); line-height: 1.15; letter-spacing: -0.02em; white-space: nowrap; }
+    .brand-sub { font-size: 0.7rem; font-weight: 700; color: var(--primary); white-space: nowrap; }
+    
+    /* 6 links max on ONE line */
+    .nav-links { display: none; gap: 1.75rem; align-items: center; white-space: nowrap; }
+    @media (min-width: 992px) { .nav-links { display: flex; } }
+    .nav-link { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); }
+    .nav-link:hover { color: var(--primary); }
+    
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1.6rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.925rem; transition: all 0.2s ease; cursor: pointer; border: none; white-space: nowrap; }
+    .btn-coral { background: var(--coral); color: #fff; box-shadow: var(--shadow-coral); }
+    .btn-coral:hover { background: var(--coral-hover); transform: translateY(-2px); }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: var(--shadow-blue); }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); }
+    .btn-outline { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
+    .btn-outline:hover { background: #f8fafc; transform: translateY(-2px); }
+    .lang-pill { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.65rem; border-radius: 8px; background: #f8fafc; border: 1px solid var(--border); font-size: 0.775rem; font-weight: 700; cursor: pointer; color: var(--text); }
+    
+    /* Section Headings */
+    .section-header { text-align: center; max-width: 680px; margin: 0 auto 3.5rem auto; }
+    .badge { display: inline-block; padding: 0.35rem 0.95rem; border-radius: 999px; background: var(--primary-tint); color: var(--primary); border: 1px solid rgba(37,99,235,0.18); font-size: 0.8rem; font-weight: 700; margin-bottom: 0.85rem; }
+    .section-title { font-size: clamp(2rem, 4vw, 2.85rem); color: var(--text); margin-bottom: 0.85rem; }
+    .section-sub { font-size: 1.05rem; color: var(--text-muted); }
+    
+    /* Hero */
+    .hero { padding: 4.5rem 0 5rem 0; background: var(--bg); }
+    .hero-grid { display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: center; }
+    @media (min-width: 1024px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; } }
+    .hero-h1 { font-size: clamp(2.5rem, 5.5vw, 4.25rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.035em; color: var(--text); margin-bottom: 1.25rem; }
+    .hero-p { font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.6; margin-bottom: 2.25rem; max-width: 540px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
+    .hero-chips { display: flex; flex-wrap: wrap; gap: 1.25rem; padding-top: 1.75rem; border-top: 1px solid var(--border); font-size: 0.875rem; font-weight: 600; color: var(--text-muted); }
+    
+    /* Bento cluster on Hero right */
+    .bento-hero-cluster { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .b-card-main { grid-column: span 2; background: linear-gradient(135deg, #2563EB, #1D4ED8); border-radius: var(--radius-lg); padding: 2.25rem 2rem; color: #fff; box-shadow: var(--shadow-card); animation: softFloat 6s ease-in-out infinite; }
+    .b-card-stat { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-card); animation: softFloat 7s ease-in-out 1s infinite; }
+    .b-card-doc { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-card); animation: softFloat 8s ease-in-out 0.5s infinite; }
+    @keyframes softFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    
+    /* Services Bento */
+    .services-sec { padding: 5.5rem 0; background: var(--bg); }
+    .services-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+    @media (min-width: 640px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .services-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+    .srv-bento-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 1.75rem; transition: all 0.25s ease; position: relative; }
+    @media (min-width: 1024px) { .srv-bento-card.featured { grid-column: span 2; background: linear-gradient(135deg, #fff 60%, var(--primary-tint)); } }
+    .srv-bento-card:hover { transform: translateY(-4px); border-color: var(--primary); background: #eff6ff; box-shadow: 0 12px 28px rgba(15,23,42,0.08); }
+    .srv-icon { width: 50px; height: 50px; border-radius: var(--radius-sm); background: var(--primary-tint); color: var(--primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.4rem; }
+    .srv-title { font-size: 1.25rem; font-weight: 800; color: var(--text); margin-bottom: 0.5rem; }
+    
+    /* Doctors */
+    .doctors-sec { padding: 5.5rem 0; background: #fff; border-top: 1px solid var(--border); }
+    .doctors-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 960px; margin: 0 auto; }
+    @media (min-width: 768px) { .doctors-grid { grid-template-columns: repeat(2, 1fr); } }
+    .doc-bento { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); transition: all 0.25s ease; }
+    .doc-bento:hover { transform: translateY(-4px); border-color: var(--primary); }
+    .doc-photo-area { height: 230px; background: linear-gradient(135deg, #f1f5f9, var(--primary-tint)); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .doc-avatar { width: 84px; height: 84px; border-radius: var(--radius-sm); background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .doc-info { padding: 1.85rem; }
+    
+    /* Why Choose Us - Dark Navy Contrast Section */
+    .why-navy { background: var(--dark-navy); color: #fff; padding: 6rem 0; }
+    .counters-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 3.5rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    @media (min-width: 992px) { .counters-grid { grid-template-columns: repeat(4, 1fr); } }
+    .counter-box { background: var(--dark-surface); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.75rem 1.25rem; text-align: center; }
+    .counter-digit { font-size: 2.75rem; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 0.35rem; }
+    .why-feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .why-feat-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.75rem 1.5rem; }
+    
+    /* Draggable Before / After Slider */
+    .gallery-sec { padding: 5.5rem 0; background: var(--bg); }
+    .slider-box { max-width: 780px; margin: 0 auto; position: relative; height: 380px; border-radius: var(--radius-lg); overflow: hidden; background: #0f172a; user-select: none; }
+    .slider-pane { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .slider-pane.after { background: linear-gradient(135deg, #1E3A8A, #2563EB); }
+    .slider-pane.before { background: linear-gradient(135deg, #1E293B, #334155); color: #e2e8f0; }
+    .slider-input { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; z-index: 10; }
+    .slider-bar { position: absolute; top: 0; bottom: 0; width: 2.5px; background: #fff; pointer-events: none; z-index: 5; }
+    .slider-knob { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 38px; height: 38px; border-radius: 50%; background: #fff; color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.9rem; }
+    
+    /* Horizontal Scrolling Reviews */
+    .reviews-sec { padding: 5.5rem 0; background: #fff; border-top: 1px solid var(--border); }
+    .rev-scroll { display: flex; gap: 1.5rem; overflow-x: auto; padding: 1rem 0.25rem 2rem 0.25rem; scroll-snap-type: x mandatory; }
+    .rev-bento { min-width: 320px; max-width: 380px; flex: 0 0 auto; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 1.75rem; box-shadow: var(--shadow-card); position: relative; }
+    
+    /* Two-Column Appointment & Map */
+    .app-sec { padding: 5.5rem 0; background: var(--bg); border-top: 1px solid var(--border); }
+    .app-two-col { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 992px) { .app-two-col { grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; } }
+    .app-white-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem 2rem; box-shadow: var(--shadow-card); }
+    .form-fld { width: 100%; padding: 0.8rem 1rem; background: #f8fafc; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: var(--font); font-size: 0.925rem; margin-bottom: 1rem; }
+    .map-frame { width: 100%; height: 230px; border: 0; border-radius: var(--radius-sm); border: 1px solid var(--border); margin: 1.25rem 0; }
+    
+    /* Footer Strip & Dark Navy 3-Col */
+    .cta-strip { background: linear-gradient(135deg, #1D4ED8, #2563EB); color: #fff; padding: 4.5rem 0; text-align: center; }
+    footer { background: var(--dark-navy); color: #94A3B8; padding: 4.5rem 0 2rem 0; }
+    .footer-3col { display: grid; grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3rem; }
+    @media (min-width: 768px) { .footer-3col { grid-template-columns: 1.4fr 1fr 1.2fr; gap: 3rem; } }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.825rem; }
+    
+    /* Sticky Mobile Bottom Bar (Replaces floating buttons) */
+    .mobile-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; border-top: 1px solid var(--border); padding: 0.75rem 1rem; display: flex; gap: 0.75rem; z-index: 1000; box-shadow: 0 -4px 16px rgba(15,23,42,0.08); }
+    @media (min-width: 768px) { .mobile-bar { display: none; } }
+    .m-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.75rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.875rem; text-decoration: none; }
+    .m-call { background: var(--primary-tint); color: var(--primary); }
+    .m-wa { background: var(--mint); color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-icon">D</div>
+        <div>
+          <div class="brand-title">Diya's Dental Studio</div>
+          <div class="brand-sub">& General Care • Mansarovar</div>
+        </div>
+      </div>
+
+      <!-- 6 Links Max - Guaranteed 1 Line with No Wrapping -->
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link" id="nav-home">Home</a>
+        <a href="#services" class="nav-link" id="nav-services">Services</a>
+        <a href="#doctors" class="nav-link" id="nav-doctors">Doctors</a>
+        <a href="#reviews" class="nav-link" id="nav-reviews">Reviews</a>
+        <a href="#location" class="nav-link" id="nav-location">Contact</a>
+        <a href="/admin" class="nav-link" style="color: var(--primary);" id="nav-admin">Admin</a>
+      </nav>
+
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <button class="lang-pill" onclick="toggleLang()" id="lang-btn">
+          EN / हिं
+        </button>
+        <!-- Warm Coral Button -->
+        <a href="#appointment" class="btn btn-coral" style="padding: 0.6rem 1.25rem;">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Modern Dental & General Health Studio</div>
+        <h1 class="hero-h1" id="hero-title">Your smile, in caring hands.</h1>
+        <p class="hero-p" id="hero-desc">
+          9+ years of trusted dental and family care in Mansarovar, Jaipur.
+        </p>
+
+        <div class="hero-actions">
+          <!-- Warm Coral Button -->
+          <a href="#appointment" class="btn btn-coral">Book Appointment</a>
+          <!-- Outlined Call Now Button -->
+          <a href="#location" class="btn btn-outline">Call Now: [Phone]</a>
+        </div>
+
+        <div class="hero-chips">
+          <div>✓ 9+ Years in Mansarovar</div>
+          <div>✓ Dr. Neel Kamal & Dr. Gopal Lal Singhal</div>
+          <div>✓ Hospital-Grade Sterilisation</div>
+        </div>
+      </div>
+
+      <!-- Bento cluster on the right -->
+      <div class="bento-hero-cluster">
+        <div class="b-card-main">
+          <span style="font-size: 0.75rem; font-weight: 800; background: rgba(255,255,255,0.2); padding: 0.25rem 0.65rem; border-radius: 999px;">
+            [Clinic Studio Visual]
+          </span>
+          <h3 style="font-size: 1.45rem; color: #fff; margin: 1rem 0 0.35rem 0;">Modern Dental & Health Studio</h3>
+          <p style="font-size: 0.875rem; color: rgba(255,255,255,0.85);">120A, Shri Ram Vihar A, Manyawas, Mansarovar, Jaipur</p>
+        </div>
+
+        <div class="b-card-stat">
+          <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary); line-height: 1;">9+</div>
+          <div style="font-size: 0.85rem; font-weight: 700; margin-top: 0.35rem;">Years of Care</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">Mansarovar, Jaipur</div>
+        </div>
+
+        <div class="b-card-doc">
+          <div style="color: var(--mint); font-size: 0.75rem; font-weight: 700;">✓ 2 Attending Doctors</div>
+          <div style="font-size: 1rem; font-weight: 800; margin-top: 0.25rem;">Specialist Care</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Dr. Neel Kamal<br>Dr. Gopal Lal Singhal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Services Bento Grid -->
+  <section class="services-sec" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" style="background: var(--mint-light); color: var(--mint); border-color: rgba(16,185,129,0.25);">
+          Clinical Treatments
+        </div>
+        <h2 class="section-title" id="srv-head">Everything your family needs, under one roof.</h2>
+        <p class="section-sub">Explore gentle dental surgery and primary health consultations tailored for all generations.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Big Featured Card -->
+        <div class="srv-bento-card featured">
+          <div class="srv-icon">✨</div>
+          <span style="display: inline-block; font-size: 0.75rem; font-weight: 800; background: var(--mint-light); color: var(--mint); padding: 0.2rem 0.65rem; border-radius: 999px; margin-bottom: 0.75rem;">
+            ★ Featured Treatment
+          </span>
+          <h3 class="srv-title">Checkup and Cleaning</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            Comprehensive oral examination, ultrasonic scaling, and stain cleaning for lifelong oral health and cavity prevention.
+          </p>
+          <a href="#appointment" style="font-weight: 700; color: var(--primary);">Book Consultation →</a>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">🛡️</div>
+          <h3 class="srv-title">Dental Fillings</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Natural tooth-coloured composite restorations that repair cavities and restore tooth durability.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">⚡</div>
+          <h3 class="srv-title">Root Canal Treatment</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Gentle, modern endodontic therapy designed to eliminate toothache and save natural teeth.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">🩹</div>
+          <h3 class="srv-title">Painless Extractions</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Atraumatic, painless tooth removal procedures carried out with comforting protocol.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">😁</div>
+          <h3 class="srv-title">Braces and Aligners</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Clear aligners and modern orthodontic braces for precise smile alignment.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">👑</div>
+          <h3 class="srv-title">Crowns and Bridges</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Precision ceramic and zirconia crowns that restore bite function and aesthetic contour.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">🦷</div>
+          <h3 class="srv-title">Dentures</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Comfortable complete and partial denture solutions engineered for chewing confidence.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">☀️</div>
+          <h3 class="srv-title">Teeth Whitening</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Clinical brightening treatments to safely remove stains and renew radiant natural smiles.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">🧸</div>
+          <h3 class="srv-title">Kids' Dentistry</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Kid-friendly dental checkups fostering great oral hygiene early without stress.</p>
+        </div>
+
+        <div class="srv-bento-card">
+          <div class="srv-icon">🩺</div>
+          <h3 class="srv-title">General Health Consultation</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Primary care consultations, vitals monitoring, seasonal care, and family wellness.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 1rem 1.5rem; background: #fff; border: 1px dashed var(--border); border-radius: var(--radius-sm); text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+        ℹ️ <strong>Note for clinic owner:</strong> All services, descriptions, and pricing are fully customizable.
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Meet the Doctors -->
+  <section class="doctors-sec" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Medical Team</div>
+        <h2 class="section-title" id="doc-head">Meet our dedicated doctors</h2>
+        <p class="section-sub">Over 9+ years of committed clinical practice in Mansarovar, Jaipur.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <div class="doc-bento">
+          <div class="doc-photo-area">
+            <div class="doc-avatar">NK</div>
+            <div style="font-size: 0.75rem; background: #fff; padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid var(--border); font-weight: 700;">
+              [Doctor Photo Placeholder]
+            </div>
+          </div>
+          <div class="doc-info">
+            <h3 style="font-size: 1.45rem; margin-bottom: 0.25rem;">Dr. Neel Kamal</h3>
+            <div style="color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Chief Dental Surgeon</div>
+            <div style="display: inline-block; background: var(--primary-tint); color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 6px; margin-bottom: 1rem;">
+              Qualification: [Qualification]
+            </div>
+            <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Dedicated dental surgeon offering gentle, painless root canals, cosmetic smile restorations, and preventative dental wellness in Mansarovar for 9+ years.
+            </p>
+            <a href="#appointment" class="btn btn-primary" style="width: 100%;">Book with Dr. Neel Kamal</a>
+          </div>
+        </div>
+
+        <div class="doc-bento">
+          <div class="doc-photo-area">
+            <div class="doc-avatar">GS</div>
+            <div style="font-size: 0.75rem; background: #fff; padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid var(--border); font-weight: 700;">
+              [Doctor Photo Placeholder]
+            </div>
+          </div>
+          <div class="doc-info">
+            <h3 style="font-size: 1.45rem; margin-bottom: 0.25rem;">Dr. Gopal Lal Singhal</h3>
+            <div style="color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Senior General Physician</div>
+            <div style="display: inline-block; background: var(--primary-tint); color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 6px; margin-bottom: 1rem;">
+              Qualification: [Qualification]
+            </div>
+            <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Experienced physician providing attentive diagnostics, seasonal disease care, and comprehensive family health guidance under one roof in Mansarovar for 9+ years.
+            </p>
+            <a href="#appointment" class="btn btn-primary" style="width: 100%;">Book with Dr. Gopal Lal Singhal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Why Choose Us (Dark Navy Full-Width Contrast Section) -->
+  <section class="why-navy" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" style="background: rgba(255,255,255,0.1); color: #60a5fa; border-color: rgba(255,255,255,0.2);">
+          Why Choose Us
+        </div>
+        <h2 class="section-title" style="color: #fff;" id="why-head">Why Jaipur families trust us</h2>
+        <p class="section-sub" style="color: #94A3B8;">A clinical practice built around clinical safety, painless procedures, and human warmth.</p>
+      </div>
+
+      <!-- 4 Animated Counters -->
+      <div class="counters-grid">
+        <div class="counter-box">
+          <div class="counter-digit">9+</div>
+          <div style="font-weight: 700;">Years of Care</div>
+          <div style="font-size: 0.75rem; color: #94A3B8; margin-top: 0.25rem;">Serving Mansarovar</div>
+        </div>
+        <div class="counter-box">
+          <div class="counter-digit">2</div>
+          <div style="font-weight: 700;">Specialist Doctors</div>
+          <div style="font-size: 0.75rem; color: #94A3B8; margin-top: 0.25rem;">Under One Roof</div>
+        </div>
+        <div class="counter-box">
+          <div class="counter-digit">100%</div>
+          <div style="font-weight: 700;">Sterilised Tools</div>
+          <div style="font-size: 0.75rem; color: #94A3B8; margin-top: 0.25rem;">Multi-Stage Autoclave</div>
+        </div>
+        <div class="counter-box">
+          <div class="counter-digit">1</div>
+          <div style="font-weight: 700;">Neighbourhood Studio</div>
+          <div style="font-size: 0.75rem; color: #94A3B8; margin-top: 0.25rem;">Dental + Family Medicine</div>
+        </div>
+      </div>
+
+      <!-- 4 Feature Cards -->
+      <div class="why-feat-grid">
+        <div class="why-feat-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🪶</div>
+          <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem;">Painless Care</h3>
+          <p style="font-size: 0.875rem; color: #94A3B8;">Gentle anesthetics and modern equipment ensuring stress-free visits for all ages.</p>
+        </div>
+        <div class="why-feat-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🛡️</div>
+          <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem;">Hospital Sterilisation</h3>
+          <p style="font-size: 0.875rem; color: #94A3B8;">Multi-barrier autoclaving and sealed pouches for strictly controlled infection prevention.</p>
+        </div>
+        <div class="why-feat-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">💬</div>
+          <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem;">Clear Communication</h3>
+          <p style="font-size: 0.875rem; color: #94A3B8;">Honest diagnostic walkthroughs and complete clarity before any procedure begins.</p>
+        </div>
+        <div class="why-feat-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🤝</div>
+          <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem;">Affordable Family Care</h3>
+          <p style="font-size: 0.875rem; color: #94A3B8;">High clinical quality and honest pricing tailored for families in Mansarovar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Smile Gallery (Draggable Slider) -->
+  <section class="gallery-sec" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Before & After</div>
+        <h2 class="section-title" id="gal-head">Smile Transformation Gallery</h2>
+        <p class="section-sub">Drag the slider horizontally to compare before and after treatment.</p>
+      </div>
+
+      <div class="slider-box" id="sliderBox">
+        <div class="slider-pane after">
+          <div style="font-size: 2.5rem;">✨</div>
+          <h3 style="font-size: 1.6rem; margin-top: 0.5rem;">Restored Natural Radiance</h3>
+          <p style="font-size: 0.875rem; opacity: 0.85;">[After: Aesthetic Teeth Whitening & Composite Smile Realignment]</p>
+          <div style="position: absolute; top: 1rem; right: 1rem; background: var(--mint); padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800;">AFTER</div>
+        </div>
+
+        <div class="slider-pane before" id="beforePane" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+          <div style="font-size: 2.5rem;">🦷</div>
+          <h3 style="font-size: 1.6rem; margin-top: 0.5rem; color: #fff;">Initial Enamel Condition</h3>
+          <p style="font-size: 0.875rem; opacity: 0.85;">[Before: Deep Discoloration, Cavity Decay & Misalignment Pre-Treatment]</p>
+          <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(15,23,42,0.8); padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800;">BEFORE</div>
+        </div>
+
+        <div class="slider-bar" id="sliderBar" style="left: 50%;">
+          <div class="slider-knob">↔</div>
+        </div>
+
+        <input type="range" min="0" max="100" value="50" class="slider-input" oninput="updateSlider(this.value)">
+      </div>
+      <div style="text-align: center; font-size: 0.825rem; color: var(--text-muted); margin-top: 1rem;">
+        ↔ Drag horizontal slider to interact • Clearly labelled placeholder for clinic photography
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Reviews (Horizontally Scrolling Cards) -->
+  <section class="reviews-sec" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Patient Feedback</div>
+        <h2 class="section-title" id="rev-head">What patients say about us</h2>
+        <p class="section-sub">Real feedback from Mansarovar families we have had the privilege to treat.</p>
+      </div>
+
+      <div class="rev-scroll">
+        <div class="rev-bento">
+          <span style="display: inline-block; font-size: 0.725rem; font-weight: 700; background: #f1f5f9; border: 1px dashed #cbd5e1; padding: 0.2rem 0.65rem; border-radius: 999px; margin-bottom: 1rem;">
+            Sample review
+          </span>
+          <div style="color: #F59E0B; margin-bottom: 0.75rem;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            "Sample review: Very polite communication and thorough explanation of the treatment plan. Having both dental and general care in one place is very convenient for our family in Mansarovar."
+          </p>
+          <div style="font-size: 0.9rem; font-weight: 700;">Patient Name (Sample review)</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">Verified Patient • Mansarovar, Jaipur</div>
+        </div>
+
+        <div class="rev-bento">
+          <span style="display: inline-block; font-size: 0.725rem; font-weight: 700; background: #f1f5f9; border: 1px dashed #cbd5e1; padding: 0.2rem 0.65rem; border-radius: 999px; margin-bottom: 1rem;">
+            Sample review
+          </span>
+          <div style="color: #F59E0B; margin-bottom: 0.75rem;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            "Sample review: Friendly doctors and extremely gentle dental treatment. The clinic has maintained high hygiene standards right here in Mansarovar."
+          </p>
+          <div style="font-size: 0.9rem; font-weight: 700;">Patient Name (Sample review)</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">Verified Patient • Mansarovar, Jaipur</div>
+        </div>
+
+        <div class="rev-bento">
+          <span style="display: inline-block; font-size: 0.725rem; font-weight: 700; background: #f1f5f9; border: 1px dashed #cbd5e1; padding: 0.2rem 0.65rem; border-radius: 999px; margin-bottom: 1rem;">
+            Sample review
+          </span>
+          <div style="color: #F59E0B; margin-bottom: 0.75rem;">★★★★★</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            "Sample review: Highly reassuring experience for my entire family. Dr. Neel Kamal and Dr. Gopal Lal Singhal provide attentive, calm patient care."
+          </p>
+          <div style="font-size: 0.9rem; font-weight: 700;">Patient Name (Sample review)</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">Verified Patient • Mansarovar, Jaipur</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; font-size: 0.8125rem; color: var(--text-muted); margin-top: 1rem;">
+        Notice: These are placeholder sample review cards ready to be updated with real patient feedback.
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Appointment & Location (Clean 2-Column Section) -->
+  <section class="app-sec" id="appointment">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Direct Scheduling</div>
+        <h2 class="section-title" id="form-head">Book your appointment</h2>
+        <p class="section-sub">Choose your preferred time with Dr. Neel Kamal or Dr. Gopal Lal Singhal.</p>
+      </div>
+
+      <div class="app-two-col">
+        <!-- Column 1: White Card Form -->
+        <div class="app-white-card">
+          <form onsubmit="handleFormSubmit(event)">
+            <label style="font-size: 0.825rem; font-weight: 700; display: block; margin-bottom: 0.35rem;">Patient Full Name *</label>
+            <input type="text" id="app_name" class="form-fld" required placeholder="e.g. Ramesh Kumar">
+
+            <label style="font-size: 0.825rem; font-weight: 700; display: block; margin-bottom: 0.35rem;">Phone Number *</label>
+            <input type="tel" id="app_phone" class="form-fld" required placeholder="e.g. 98290XXXXX">
+
+            <label style="font-size: 0.825rem; font-weight: 700; display: block; margin-bottom: 0.35rem;">Service Needed</label>
+            <select id="app_service" class="form-fld">
+              <option>Checkup and Cleaning</option>
+              <option>Dental Fillings</option>
+              <option>Root Canal Treatment</option>
+              <option>Painless Extractions</option>
+              <option>Braces and Aligners</option>
+              <option>Crowns and Bridges</option>
+              <option>Dentures</option>
+              <option>Teeth Whitening</option>
+              <option>Kids' Dentistry</option>
+              <option>General Health Consultation</option>
+            </select>
+
+            <label style="font-size: 0.825rem; font-weight: 700; display: block; margin-bottom: 0.35rem;">Preferred Date *</label>
+            <input type="date" id="app_date" class="form-fld" required>
+
+            <label style="font-size: 0.825rem; font-weight: 700; display: block; margin-bottom: 0.35rem;">Notes (Optional)</label>
+            <textarea id="app_msg" class="form-fld" rows="3" placeholder="Describe symptoms or routine checkup inquiry..."></textarea>
+
+            <!-- Warm Coral Button -->
+            <button type="submit" class="btn btn-coral" style="width: 100%; padding: 0.95rem;">
+              Confirm Appointment & WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- Column 2: Contact & Map Card Beside It -->
+        <div class="app-white-card" id="location">
+          <span style="font-size: 0.75rem; font-weight: 800; background: var(--primary-tint); color: var(--primary); padding: 0.25rem 0.65rem; border-radius: 999px;">
+            Studio Location
+          </span>
+          <h3 style="font-size: 1.35rem; margin: 0.75rem 0 1rem 0;">Diya's Dental and General Care Clinic</h3>
+
+          <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem; margin-bottom: 1.25rem;">
+            <div>📍 <strong>Address:</strong> 120A, Shri Ram Vihar A, Manyawas, Mansarovar, Jaipur</div>
+            <div>📞 <strong>Phone:</strong> [Phone]</div>
+            <div>🕒 <strong>Hours:</strong> [Timings]</div>
+            <div>👨‍⚕️ <strong>Doctors:</strong> Dr. Neel Kamal & Dr. Gopal Lal Singhal</div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps?q=120A,+Shri+Ram+Vihar+A,+Manyawas,+Mansarovar,+Jaipur&output=embed"
+            class="map-frame"
+            loading="lazy"
+          ></iframe>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=120A,+Shri+Ram+Vihar+A,+Manyawas,+Mansarovar,+Jaipur" target="_blank" class="btn btn-outline" style="width: 100%;">
+            Get Directions on Google Maps ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Big CTA Strip Above Footer -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2 style="font-size: clamp(2rem, 4.5vw, 3.25rem); color: #fff; margin-bottom: 0.75rem;">Book your visit today</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto;">
+        Gentle dental surgery and dedicated general health consultations in Mansarovar, Jaipur.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <!-- Warm Coral CTA -->
+        <a href="#appointment" class="btn btn-coral" style="padding: 0.85rem 2rem;">Book Appointment</a>
+        <a href="#location" class="btn btn-outline" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3); padding: 0.85rem 1.8rem;">Call Now: [Phone]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Dark Navy 3-Column Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-3col">
+        <div>
+          <h4 style="color: #fff; font-size: 1.25rem; margin-bottom: 0.75rem;">Diya's Dental & General Care Clinic</h4>
+          <p style="font-size: 0.875rem; line-height: 1.6;">
+            Painless dental procedures and dedicated family health consultations under one roof in Mansarovar, Jaipur. Serving patients with trust for 9+ years.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: #fff; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase;">Quick Links</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0.5rem;"><a href="#hero">Home</a></p>
+          <p style="font-size: 0.875rem; margin-bottom: 0.5rem;"><a href="#services">Services</a></p>
+          <p style="font-size: 0.875rem; margin-bottom: 0.5rem;"><a href="#doctors">Doctors</a></p>
+          <p style="font-size: 0.875rem; margin-bottom: 0.5rem;"><a href="#reviews">Reviews</a></p>
+          <p style="font-size: 0.875rem;"><a href="/admin" style="color: #60a5fa;">Admin Portal</a></p>
+        </div>
+
+        <div>
+          <h4 style="color: #fff; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase;">Mansarovar Studio</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 0.4rem;">120A, Shri Ram Vihar A, Manyawas, Mansarovar, Jaipur</p>
+          <p style="font-size: 0.875rem; margin-bottom: 0.4rem;">Phone: [Phone]</p>
+          <p style="font-size: 0.875rem;">Timings: [Timings]</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© Diya's Dental and General Care Clinic. All rights reserved.</div>
+        <div>Attended by Dr. Neel Kamal & Dr. Gopal Lal Singhal • Mansarovar, Jaipur</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom Bar (Replaces floating buttons on mobile) -->
+  <div class="mobile-bar">
+    <a href="#location" class="m-btn m-call">📞 Call: [Phone]</a>
+    <a href="https://wa.me/?text=Hello%20Diya's%20Dental%20Clinic,%20I%20would%20like%20to%20inquire%20about%20an%20appointment" target="_blank" class="m-btn m-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script>
+    let curLang = 'en';
+    const dict = {
+      en: {
+        title: "Your smile, in caring hands.",
+        desc: "9+ years of trusted dental and family care in Mansarovar, Jaipur.",
+        srvHead: "Everything your family needs, under one roof.",
+        docHead: "Meet our dedicated doctors",
+        whyHead: "Why Jaipur families trust us",
+        galHead: "Smile Transformation Gallery",
+        revHead: "What patients say about us",
+        formHead: "Book your appointment",
+        langBtn: "EN / हिं"
+      },
+      hi: {
+        title: "आपकी मुस्कान, भरोसेमंद हाथों में।",
+        desc: "मानसरोवर, जयपुर में 9+ वर्षों से विश्वसनीय दंत एवं संपूर्ण पारिवारिक स्वास्थ्य सेवा।",
+        srvHead: "आपके परिवार की हर स्वास्थ्य जरूरत, एक ही छत पर।",
+        docHead: "हमारे अनुभवी चिकित्सकों से मिलें",
+        whyHead: "मरीज हम पर भरोसा क्यों करते हैं",
+        galHead: "स्माइल ट्रांसफॉर्मेशन गैलरी",
+        revHead: "मरीजों की राय",
+        formHead: "अपॉइंटमेंट बुक करें",
+        langBtn: "हिं / EN"
+      }
+    };
+
+    function toggleLang() {
+      curLang = curLang === 'en' ? 'hi' : 'en';
+      document.getElementById('hero-title').innerText = dict[curLang].title;
+      document.getElementById('hero-desc').innerText = dict[curLang].desc;
+      document.getElementById('srv-head').innerText = dict[curLang].srvHead;
+      document.getElementById('doc-head').innerText = dict[curLang].docHead;
+      document.getElementById('why-head').innerText = dict[curLang].whyHead;
+      document.getElementById('gal-head').innerText = dict[curLang].galHead;
+      document.getElementById('rev-head').innerText = dict[curLang].revHead;
+      document.getElementById('form-head').innerText = dict[curLang].formHead;
+      document.getElementById('lang-btn').innerText = dict[curLang].langBtn;
+    }
+
+    function updateSlider(val) {
+      document.getElementById('beforePane').style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
+      document.getElementById('sliderBar').style.left = `${val}%`;
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('app_name').value;
+      const phone = document.getElementById('app_phone').value;
+      const service = document.getElementById('app_service').value;
+      const date = document.getElementById('app_date').value;
+      const msg = document.getElementById('app_msg').value;
+
+      const waMsg = `Hello Diya's Dental and General Care Clinic, I would like to book an appointment:%0A• Patient: ${encodeURIComponent(name)}%0A• Phone: ${encodeURIComponent(phone)}%0A• Service: ${encodeURIComponent(service)}%0A• Date: ${encodeURIComponent(date)}%0A• Note: ${encodeURIComponent(msg || 'None')}`;
+      window.open(`https://wa.me/?text=${waMsg}`, '_blank');
+      alert(`Thank you, ${name}! Your request has been recorded. Opening WhatsApp with your prefilled details.`);
+    }
+
+    document.getElementById('app_date').min = new Date().toISOString().split('T')[0];
+  </script>
+</body>
+</html>

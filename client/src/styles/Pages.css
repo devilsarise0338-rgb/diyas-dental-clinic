@@ -1,0 +1,36 @@
+.page-hero-banner {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: #ffffff;
+  padding: 4.5rem 0 3.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(197, 160, 89, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.page-hero-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero-sub {
+  color: #d1d5db;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page-content-section {
+  padding: 4.5rem 0;
+}
